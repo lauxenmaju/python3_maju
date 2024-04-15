@@ -1,7 +1,8 @@
 #1 10/04 imoport lib os (operational system)
 import os
 
-restaurante=[]
+#inserir 2 restaurantes na list
+restaurantes=['Bife Sujo', 'Saco de Feijão']
 
 #2 declarando a função finalizar_app
 def finalizar_app():
@@ -27,10 +28,20 @@ def exibir_opcoes():
 def cadatrar_novo_restaurante():
     os.system('clear')
     nome_do_restaurante= input('digite o nome do novo restaurante:')
-    restaurante.append(nome_do_restaurante)
+    restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante}, foi cadastrado com sucesso\n')
     input('Digite uma tecla para voltar ao menu principal')
     main()
+
+def listar_restaurantes():
+    os.system('clear')
+    print('Listando os restaurantes\n')
+    for restaurante in restaurantes:
+        print(f'- {restaurantes}')
+    #chamar a duas funções e saída
+    input('Digite uma tecla para voltar ao menu principal')
+    main()
+
 
 #8 declarando a função opcao_digitada1
 def escolher_opcao():
@@ -42,7 +53,8 @@ def escolher_opcao():
             print("Você escolheu Cadastrar Restaurante\n")
             cadatrar_novo_restaurante()
         elif(opcao_digitada==2):
-            print("Você escolheu Listar Restaurante\n") 
+           # print("Você escolheu Listar Restaurante\n") 
+           listar_restaurantes()
         elif(opcao_digitada==3):
             print ("Voce escolheu Ativar Restaurante\n")
         elif(opcao_digitada==4):
