@@ -6,7 +6,7 @@ import os
 #inserir dicionario-em outras linguagens chave valor
 restaurantes=[{'nome':'Bife-sujo','categoria':'prato-feito','ativo': True},
               {'nome':'Saco do feijão','categoria':'feijoada','ativo': False},
-               {'nome':'Doces da Bernadete','categoria':'doceria','ativo': True},]
+               {'nome':'Doces da Bernadete','categoria':'doceria','ativo': True},] 
 
 def mostrar_subtitulo(texto):
     os.system('clear')
@@ -15,8 +15,7 @@ def mostrar_subtitulo(texto):
 
 #2 declarando a função finalizar_app
 def finalizar_app():
-    #os.system('clear')
-    #print ('Finalizando o app\n')
+    
     mostrar_subtitulo()
 
 def chamar_nome_do_app():
